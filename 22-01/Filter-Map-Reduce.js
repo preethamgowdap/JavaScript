@@ -1,3 +1,13 @@
+// const users = [
+// { "id": 1, "name": "Alice", "role": "Admin" },
+// { "id": 2, "name": "Bob", "role": "User" },
+// { "id": 3, "name": "Charlie", "role": "User" }
+// ];
+// use filter and find to pick the role admin and print the username and id map the above array to display the name and print it 
+// use spread operator and modify 2 id to admin role and print it
+// create a interface with typescript for student having props: id, name, marks 
+// and create a const variable for 2-3 users console the names of all the student with type
+
 const users= [
   {"id":1, "name": "Alice", "role": "Admin"},
   {"id":2, "name": "Bob", "role": "User"},
