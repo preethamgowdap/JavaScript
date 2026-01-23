@@ -19,11 +19,11 @@ const admins = users.filter(user=>user.role==="Admin");
 admins.forEach(admin=>{console.log(admin.id, admin.name)});
 
 //02)
-const names=users.Map(user=>user.name);
+const names=users.map(user=>user.name);
 console.log(names);
 
 //03)
-const updatedUsers=users.Map(user=>user.id===2?{...user, role:"Admin"}:user);
+const updatedUsers=users.map(user=>user.id===2?{...user, role:"Admin"}:user);
 console.log(updatedUsers);
 
 //4)
