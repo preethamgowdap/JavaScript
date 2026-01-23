@@ -18,6 +18,9 @@ const users= [
 const admins = users.filter(user=>user.role==="Admin");
 admins.forEach(admin=>{console.log(admin.id, admin.name)});
 
+const firstAdmin = users.find(user => user.role === "Admin");
+if (firstAdmin) console.log(firstAdmin.id, firstAdmin.name);
+
 //02)
 const names=users.map(user=>user.name);
 console.log(names);
