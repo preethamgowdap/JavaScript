@@ -3,11 +3,11 @@ import { useState } from "react";
 export default function App() {
   const [count, setCount] = useState<number>(0);
 
-  const incrementByTwo = () => {
+  const handleIncrement = () => {
     setCount((prev) => prev + 2);
   };
 
-  const decrementByOne = () => {
+  const handleDecrement = () => {
     setCount((prev) => prev - 1);
   };
 
@@ -17,11 +17,11 @@ export default function App() {
 
       <h2>Count: {count}</h2>
 
-      <button onClick={incrementByTwo} style={{ marginRight: "10px" }}>
+      <button onClick={handleIncrement} style={{ marginRight: "10px" }}>
         Increment 
       </button>
 
-      <button onClick={decrementByOne}>
+      <button onClick={handleDecrement}>
         Decrement 
       </button>
     </div>
