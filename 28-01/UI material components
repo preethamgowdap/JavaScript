@@ -1,1 +1,7 @@
-
+Material UI components
+1)textfield
+-Text fields allow users to enter text into a UI.
+2)radio button
+-Use radio buttons when the user needs to see all available options.
+3)checkbox
+-Checkboxes can be used to turn an option on or off.
