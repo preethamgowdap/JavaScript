@@ -16,7 +16,7 @@ type Gender = "male" | "female" | "other";
 
 export default function SimpleMuiForm() {
   const [name, setName] = useState<string>("");
-  const [gender, setGender] = useState<Gender>("male");
+  const [gender, setGender] = useState<string>("male");
   const [accepted, setAccepted] = useState<boolean>(false);
   
   return (
@@ -40,7 +40,7 @@ export default function SimpleMuiForm() {
       {/* Gender */}
       <FormControl>
         <FormLabel id="gender-label">Gender</FormLabel>
-        <RadioGroup name="Gender " value={gender} onChange={(e) => setGender(e.target.value as Gender)} >
+        <RadioGroup name="Gender " value={gender} onChange={(e) => setGender(e.target.value as string)} >
           <FormControlLabel value="male" control={<Radio />} label="Male" />
           <FormControlLabel value="female" control={<Radio />} label="Female" />
           <FormControlLabel value="other" control={<Radio />} label="Other" />
