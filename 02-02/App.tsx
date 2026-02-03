@@ -5,13 +5,10 @@ import {
   Typography, 
   IconButton, 
   Drawer, 
-  List, 
-  ListItem, 
-  ListItemButton, 
-  ListItemText, 
   Box 
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+
 
 const App: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +18,9 @@ const App: React.FC = () => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1  }}>
       {/* Top Bar */}
-      <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+      <AppBar position="fixed" color="inherit" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1,}}>
         <Toolbar>
           <IconButton
             edge="start"
@@ -33,7 +30,7 @@ const App: React.FC = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
+          <Typography  variant="h6" color='black'noWrap component="div" sx={{position:'absolute',left:'50%'}}>
             HEADING NEWS
           </Typography>
         </Toolbar>
@@ -52,21 +49,6 @@ const App: React.FC = () => {
           },
         }}
       >
-        <Box
-          sx={{ width: 240 }}
-          role="presentation"
-          onClick={toggleDrawer(false)} // Closes when clicking inside the menu
-        >
-          <List>
-            {['News Feed', 'Trending', 'Bookmarks', 'Settings'].map((text) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton>
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
-        </Box>
       </Drawer>
     </Box>
   );
