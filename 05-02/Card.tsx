@@ -57,6 +57,16 @@ const App: React.FC = () => {
       title: "Earth",
       description: "Earth provides habitat and resources.",
     },
+    {
+      id: 7,
+      title: "Phone",
+      description: "Phone is one of the need for human beings.",
+    },
+    {
+      id: 8,
+      title: "Food",
+      description: "Food is a basic need for human beings and animal.",
+    },
   ];
 
   return (
